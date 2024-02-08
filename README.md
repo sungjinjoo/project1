@@ -1,6 +1,6 @@
 
 # 국립생태원
-### [기획서 보기](./project1.pdf)
+### [기획서 보기](./project.pdf)
 > 국립생태원 **리디자인후** 구현한 프로젝트입니다.
 > 
 > 배포화면 보기 [사이트보기](https://sungjinjoo.github.io/project1/)
