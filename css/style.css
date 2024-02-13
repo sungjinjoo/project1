@@ -1,345 +1,376 @@
 * {
-    padding: o;
-    margin: 0;
+  padding: o;
+  margin: 0;
 }
 
 .popup {
-    position: fixed;
-    width: min(50%, 500px);
-    padding: 5% 2%;
-    font-size: 1.8rem;
-    line-height: 1.75;
-    background-color: #fff;
-    z-index: 9999999;
-    top: 10%;
-    left: 30%;
+  position: fixed;
+  width: min(50%, 500px);
+  padding: 5% 2%;
+  font-size: 1.8rem;
+  line-height: 1.75;
+  background-color: #fff;
+  z-index: 9999999;
+  top: 10%;
+  left: 30%;
 }
 
-.popup>span {
-    user-select: none;
-    cursor: pointer;
-    position: absolute;
-    background-color: gray;
-    padding: 1% 3%;
-    right: 10%;
-    bottom: 10%;
-    color: #fff;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .4);
+.popup > span {
+  user-select: none;
+  cursor: pointer;
+  position: absolute;
+  background-color: gray;
+  padding: 1% 3%;
+  right: 10%;
+  bottom: 10%;
+  color: #fff;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
-    width: 100%;
-    height: 85px;
-    background: white;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+  width: 100%;
+  height: 85px;
+  background: white;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .logo_box {
-    width: 20%;
-    height: 80px;
-    background: white;
-    position: absolute;
-
-
-
+  width: 20%;
+  height: 80px;
+  background: white;
+  position: absolute;
 }
 
-.logo_box>img {
-    width: 100%;
-    height: 60px;
-    margin-top: 3%;
-
+.logo_box > img {
+  width: 100%;
+  height: 60px;
+  margin-top: 3%;
 }
-
-
 
 header {
-    max-width: 100%;
-    height: 85px;
-    background: beige;
-    display: flex;
+  max-width: 100%;
+  height: 85px;
+  background: beige;
+  display: flex;
 }
 
 .nav {
-    width: 80%;
-    height: 85px;
-    background: red;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 80%;
+  height: 85px;
+  background: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.nav>li {
-    margin-left: 90px;
+.nav > li {
+  margin-left: 90px;
 }
 
 .icon {
-    width: 20%;
-    height: 85px;
-    background: orange;
-    display: flex;
-    justify-content: space-around
+  width: 20%;
+  height: 85px;
+  background: orange;
+  display: flex;
+  justify-content: space-around;
 }
 
 .icon1,
 .icon2,
 .icon3 {
-    width: 30%;
-    height: 80px;
-    border: 1px solid black;
-
+  width: 30%;
+  height: 80px;
+  border: 1px solid black;
 }
 
 .main {
-    max-width: 100%;
-    height: 800px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  max-width: 100%;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-    width: 1440px;
-    height: 800px;
-    position: relative;
+  width: 1440px;
+  height: 800px;
+  position: relative;
 }
 
 .main_box {
-    width: 780px;
-    height: 210px;
-    background: white;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 780px;
+  height: 210px;
+  background: white;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main_icon {
-    width: 120px;
-    height: 130px;
-    border: 1px solid red;
-    border-radius: 50%;
-    text-align: center;
+  width: 120px;
+  height: 130px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.main_icon>p {
-    margin-top: 80%;
+.main_icon > p {
+  margin-top: 80%;
 }
 
 .main_icon2 {
-    width: 120px;
-    height: 130px;
-    border: 1px solid red;
-    border-radius: 50%;
-    text-align: center;
+  width: 120px;
+  height: 130px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.main_icon2>p {
-    margin-top: 80%;
+.main_icon2 > p {
+  margin-top: 80%;
 }
 
 .main_icon3 {
-    width: 120px;
-    height: 130px;
-    border: 1px solid red;
-    border-radius: 50%;
-    text-align: center;
+  width: 120px;
+  height: 130px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.main_icon3>p {
-    margin-top: 80%;
+.main_icon3 > p {
+  margin-top: 80%;
 }
 
 .main_icon4 {
-    width: 120px;
-    height: 130px;
-    border: 1px solid red;
-    border-radius: 50%;
-    text-align: center;
+  width: 120px;
+  height: 130px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.main_icon4>p {
-    margin-top: 80%;
+.main_icon4 > p {
+  margin-top: 80%;
 }
 
 .main_icon5 {
-    width: 120px;
-    height: 130px;
-    border: 1px solid red;
-    border-radius: 50%;
-    text-align: center;
+  width: 120px;
+  height: 130px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.main_icon5>p {
-    margin-top: 80%;
+.main_icon5 > p {
+  margin-top: 80%;
 }
 
 .section1 {
-    max-width: 100%;
-    height: 820px;
-    border: 1px solid black;
-    margin: auto;
-    display: flex;
-    align-items: center;
-
+  max-width: 100%;
+  height: 820px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .box1 {
-    width: 50%;
-    height: 700px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around
+  width: 50%;
+  height: 700px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .box1_menu {
-    width: 80%;
-    height: 90px;
-    border: 1px solid black;
+  width: 80%;
+  height: 90px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box1_pup {
+  width: 30%;
+  height: 70px;
+  border: 1px solid blue;
+}
+.box1_pup2 {
+  width: 30%;
+  height: 70px;
+  border: 1px solid blue;
+}
+.box1_pup3 {
+  width: 30%;
+  height: 70px;
+  border: 1px solid blue;
 }
 
 .box1_menu2 {
-    width: 80%;
-    height: 550px;
-    border: 1px solid black;
-
+  width: 80%;
+  height: 550px;
+  border: 1px solid black;
 }
-
+.box1_menu2 > img {
+  width: 100%;
+  height: 550px;
+}
 .box2 {
-    width: 50%;
-    height: 700px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
+  width: 50%;
+  height: 700px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
 }
 
 .sns1 {
-    width: 45%;
-    height: 300px;
-    border: 1px solid red;
+  width: 45%;
+  height: 300px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sns1 > p {
+  width: 20%;
+  height: 20px;
+  font-size: 20px;
+}
+.sns1 > img {
+  width: 100%;
+  height: 300px;
 }
 
 .sns2 {
-    width: 45%;
-    height: 300px;
-    border: 1px solid red;
+  width: 45%;
+  height: 300px;
+  border: 1px solid red;
+}
+.sns2 > p {
+  width: 20%;
+  height: 20px;
+  font-size: 20px;
+}
+
+.sns2 > img {
+  width: 100%;
+  height: 300px;
 }
 
 .sns3 {
-    width: 45%;
-    height: 300px;
-    border: 1px solid red;
+  width: 45%;
+  height: 300px;
+  border: 1px solid red;
 }
 
 .sns4 {
-    width: 45%;
-    height: 300px;
-    border: 1px solid red;
+  width: 45%;
+  height: 300px;
+  border: 1px solid red;
 }
 
 .section2 {
-    max-width: 100%;
-    height: 815px;
-    border: 1px solid black;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 100%;
+  height: 815px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section2_box {
-    width: 100%;
-    height: 100px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .section2_box1 {
-    width: 30%;
-    height: 80px;
-    border: 1px solid blue;
+  width: 30%;
+  height: 80px;
+  border: 1px solid blue;
 }
 
 .section2_box2 {
-    width: 30%;
-    height: 80px;
-    border: 1px solid blue;
+  width: 30%;
+  height: 80px;
+  border: 1px solid blue;
 }
 
 .section2_box3 {
-    width: 30%;
-    height: 80px;
-    border: 1px solid blue;
+  width: 30%;
+  height: 80px;
+  border: 1px solid blue;
 }
 
 .banner_box {
-    width: 100%;
-    height: 570px;
-    border: 1px solid red;
+  width: 100%;
+  height: 570px;
+  border: 1px solid red;
 }
 
 .section3 {
-    max-width: 100%;
-    height: 815px;
-    border: 1px solid black;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
+  max-width: 100%;
+  height: 815px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sec3_cont {
-    width: 100%;
-    height: 600px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .sec3_box {
-    width: 240px;
-    height: 320px;
-    border: 1px solid blue;
+  width: 240px;
+  height: 320px;
+  border: 1px solid blue;
 }
 
 .sec3_box2 {
-    width: 240px;
-    height: 320px;
-    border: 1px solid blue;
-    margin-bottom: 10%;
+  width: 240px;
+  height: 320px;
+  border: 1px solid blue;
+  margin-bottom: 10%;
 }
 
 .sec3_box3 {
-    width: 240px;
-    height: 320px;
-    border: 1px solid blue;
+  width: 240px;
+  height: 320px;
+  border: 1px solid blue;
 }
 
 .sec3_box4 {
-    width: 240px;
-    height: 320px;
-    border: 1px solid blue;
-    margin-bottom: 10%;
+  width: 240px;
+  height: 320px;
+  border: 1px solid blue;
+  margin-bottom: 10%;
 }
 
 .sec3_box5 {
-    width: 240px;
-    height: 320px;
-    border: 1px solid blue;
+  width: 240px;
+  height: 320px;
+  border: 1px solid blue;
 }
