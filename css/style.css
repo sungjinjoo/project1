@@ -1,4 +1,3 @@
-
 * {
     padding: o;
     margin: 0;
@@ -31,7 +30,7 @@
 .logo {
     width: 100%;
     height: 85px;
-    background: blue;
+    background: white;
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -42,7 +41,18 @@
 .logo_box {
     width: 20%;
     height: 80px;
-    background: red;
+    background: white;
+    position: absolute;
+
+
+
+}
+
+.logo_box>img {
+    width: 100%;
+    height: 60px;
+    margin-top: 3%;
+
 }
 
 
@@ -54,21 +64,17 @@ header {
     display: flex;
 }
 
-.gnb {
+.nav {
     width: 80%;
     height: 85px;
     background: red;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.c1,
-.c2,
-.c3,
-.c4,
-.c5 {
-    width: 200px;
-    height: 50px;
-    border: 1px solid black;
+.nav>li {
+    margin-left: 90px;
 }
 
 .icon {
@@ -76,6 +82,7 @@ header {
     height: 85px;
     background: orange;
     display: flex;
+    justify-content: space-around
 }
 
 .icon1,
@@ -90,26 +97,97 @@ header {
 .main {
     max-width: 100%;
     height: 800px;
-    background: skyblue;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+img {
+    width: 1440px;
+    height: 800px;
+    position: relative;
+}
+
+.main_box {
+    width: 780px;
+    height: 210px;
+    background: white;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main_icon {
-    width: 780px;
-    height: 210px;
-    background: green;
+    width: 120px;
+    height: 130px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
 }
 
-section {
+.main_icon>p {
+    margin-top: 80%;
+}
+
+.main_icon2 {
+    width: 120px;
+    height: 130px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.main_icon2>p {
+    margin-top: 80%;
+}
+
+.main_icon3 {
+    width: 120px;
+    height: 130px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.main_icon3>p {
+    margin-top: 80%;
+}
+
+.main_icon4 {
+    width: 120px;
+    height: 130px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.main_icon4>p {
+    margin-top: 80%;
+}
+
+.main_icon5 {
+    width: 120px;
+    height: 130px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.main_icon5>p {
+    margin-top: 80%;
+}
+
+.section1 {
     max-width: 100%;
-    height: 815px;
+    height: 820px;
     border: 1px solid black;
     margin: auto;
     display: flex;
     align-items: center;
+
 }
 
 .box1 {
@@ -145,27 +223,32 @@ section {
     align-content: space-around;
     justify-content: space-around;
 }
+
 .sns1 {
     width: 45%;
     height: 300px;
     border: 1px solid red;
 }
+
 .sns2 {
     width: 45%;
     height: 300px;
     border: 1px solid red;
 }
+
 .sns3 {
     width: 45%;
     height: 300px;
     border: 1px solid red;
 }
+
 .sns4 {
     width: 45%;
     height: 300px;
     border: 1px solid red;
 }
-.section2{
+
+.section2 {
     max-width: 100%;
     height: 815px;
     border: 1px solid black;
@@ -174,36 +257,89 @@ section {
     flex-direction: column;
     align-items: center;
 }
-.section2_box{
+
+.section2_box {
     width: 100%;
     height: 100px;
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-
-
-
-
 }
-.section2_box1{
+
+.section2_box1 {
     width: 30%;
     height: 80px;
     border: 1px solid blue;
 }
-.section2_box2{
+
+.section2_box2 {
     width: 30%;
     height: 80px;
     border: 1px solid blue;
 }
-.section2_box3{
+
+.section2_box3 {
     width: 30%;
     height: 80px;
     border: 1px solid blue;
 }
-.banner_box{
+
+.banner_box {
     width: 100%;
     height: 570px;
     border: 1px solid red;
+}
+
+.section3 {
+    max-width: 100%;
+    height: 815px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.sec3_cont {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.sec3_box {
+    width: 240px;
+    height: 320px;
+    border: 1px solid blue;
+}
+
+.sec3_box2 {
+    width: 240px;
+    height: 320px;
+    border: 1px solid blue;
+    margin-bottom: 10%;
+}
+
+.sec3_box3 {
+    width: 240px;
+    height: 320px;
+    border: 1px solid blue;
+}
+
+.sec3_box4 {
+    width: 240px;
+    height: 320px;
+    border: 1px solid blue;
+    margin-bottom: 10%;
+}
+
+.sec3_box5 {
+    width: 240px;
+    height: 320px;
+    border: 1px solid blue;
 }
