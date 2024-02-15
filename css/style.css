@@ -9,6 +9,7 @@
   padding: 5% 2%;
   font-size: 1.8rem;
   line-height: 1.75;
+  border-radius: 30px;
   background-color: #fff;
   z-index: 9999999;
   top: 10%;
@@ -20,6 +21,7 @@
   cursor: pointer;
   position: absolute;
   background-color: gray;
+  border-radius: 30px;
   padding: 1% 3%;
   right: 10%;
   bottom: 10%;
@@ -61,7 +63,7 @@ header {
 .nav {
   width: 80%;
   height: 85px;
-  background: red;
+  background: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,27 +97,44 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+.main_box{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  line-height: 2;
+  
+  position: absolute;
+}
+.main_box > p{
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  
+}
 img {
   width: 1440px;
   height: 800px;
-  position: relative;
+  border-radius: 20px;
+  
 }
 
-.main_box {
+.main_box1 {
   width: 780px;
   height: 210px;
-  background: white;
+  border: 1px solid black;
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40%;
 }
 
 .main_icon {
   width: 120px;
   height: 130px;
-  border: 1px solid red;
+  border: 1px solid black;
   border-radius: 50%;
   text-align: center;
 }
@@ -180,7 +199,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 .box1 {
   width: 50%;
   height: 700px;
@@ -203,16 +221,26 @@ img {
   width: 30%;
   height: 70px;
   border: 1px solid blue;
+  border-radius: 30px;
+  line-height: 70px;
+  text-align: center;
 }
+
 .box1_pup2 {
   width: 30%;
   height: 70px;
   border: 1px solid blue;
+  border-radius: 30px;
+  line-height: 70px;
+  text-align: center;
 }
 .box1_pup3 {
   width: 30%;
   height: 70px;
   border: 1px solid blue;
+  border-radius: 30px;
+  line-height: 70px;
+  text-align: center;
 }
 
 .box1_menu2 {
