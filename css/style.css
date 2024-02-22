@@ -1,5 +1,5 @@
 * {
-  padding: o;
+  padding: 0;
   margin: 0;
 }
 
@@ -12,8 +12,8 @@
   border-radius: 30px;
   background-color: #fff;
   z-index: 9999999;
-  top: 10%;
-  left: 30%;
+  top: 20%;
+  left: 40%;
 }
 
 .popup > span {
@@ -30,8 +30,8 @@
 }
 
 .logo {
-  width: 100%;
-  height: 85px;
+  width: 15%;
+  height: 70px;
   background: white;
   display: flex;
   margin: auto;
@@ -40,15 +40,8 @@
   align-items: center;
 }
 
-.logo_box {
-  width: 20%;
-  height: 80px;
-  background: white;
-  position: absolute;
-}
-
 .logo_box > img {
-  width: 100%;
+  width: 70%;
   height: 60px;
   margin-top: 3%;
 }
@@ -56,7 +49,6 @@
 header {
   max-width: 100%;
   height: 85px;
-  background: beige;
   display: flex;
 }
 
@@ -79,40 +71,16 @@ header {
   border: 1px solid black;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.icon1,
-.icon2,
-.icon3,
-.icon4 {
-  width: 30%;
-  height: 80px;
-  border: 1px solid black;
-}
-.icon1>img{
-  width: 55%;
-  height: 40px;
-  margin-top: 30%;
+.icon a > img {
+  width: 30px;
+  height: 30px;
+  margin-top: 15%;
   margin-left: 20%;
 }
-.icon2>img{
-  width: 55%;
-  height: 40px;
-  margin-top: 30%;
-  margin-left: 20%;
-}
-.icon3>img{
-  width: 55%;
-  height: 40px;
-  margin-top: 30%;
-  margin-left: 20%;
-}
-.icon4>img{
-  width: 55%;
-  height: 40px;
-  margin-top: 30%;
-  margin-left: 20%;
-}
+
 .main {
   max-width: 100%;
   height: 800px;
@@ -121,27 +89,23 @@ header {
   justify-content: center;
   align-items: center;
 }
-.main_box{
+.main_box {
   width: 100%;
   height: 300px;
   display: flex;
   line-height: 2;
-  
   position: absolute;
 }
-.main_box > p{
+.main_box > p {
   width: 100%;
   font-size: 50px;
   text-align: center;
   color: #fff;
   position: absolute;
-  
 }
 img {
-  width: 1440px;
+  width: 100%;
   height: 800px;
-  border-radius: 20px;
-  
 }
 
 .main_box1 {
@@ -214,7 +178,9 @@ img {
 .main_icon5 > p {
   margin-top: 80%;
 }
-
+.button2 {
+  margin-left: 75%;
+}
 .section1 {
   max-width: 100%;
   height: 820px;
@@ -303,6 +269,7 @@ img {
 .sns1 > img {
   width: 100%;
   height: 300px;
+  border-radius: 10%;
 }
 
 .sns2 {
@@ -319,6 +286,7 @@ img {
 .sns2 > img {
   width: 100%;
   height: 300px;
+  border-radius: 10%;
 }
 
 .sns3 {
@@ -326,11 +294,20 @@ img {
   height: 300px;
   border: 1px solid red;
 }
-
+.sns3 > img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10%;
+}
 .sns4 {
   width: 45%;
   height: 300px;
   border: 1px solid red;
+}
+.sns4 > img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10%;
 }
 
 .section2 {
@@ -356,26 +333,54 @@ img {
   width: 30%;
   height: 80px;
   border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-
+.section2_box1 a {
+  font: 2.5em sans-serif;
+}
 .section2_box2 {
   width: 30%;
   height: 80px;
   border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.section2_box2 a {
+  font: 2.5em sans-serif;
+}
 .section2_box3 {
   width: 30%;
   height: 80px;
   border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.section2_box3 a {
+  font: 2.5em sans-serif;
+}
 .banner_box {
   width: 100%;
   height: 570px;
   border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
+.banner_box1{
+width: 40%;
+height: 500px;
+border: 1px solid black;
+}
+.banner_box2{
+  width: 55%;
+  height: 500px;
+  border: 1px solid black;
+}
 .section3 {
   max-width: 100%;
   height: 815px;
