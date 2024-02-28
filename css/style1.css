@@ -27,7 +27,7 @@
   left: 40%;
 }
 
-.popup>span {
+.popup > span {
   user-select: none;
   cursor: pointer;
   position: absolute;
@@ -57,7 +57,7 @@
   object-fit: cover;
 }
 
-.logo_box>img {
+.logo_box > img {
   width: 70%;
   height: 60px;
   margin-top: 3%;
@@ -68,7 +68,7 @@ header {
   padding: 10px 0 0;
 }
 
-header>.df {
+header > .df {
   flex-direction: column;
   align-items: center;
 }
@@ -82,7 +82,7 @@ header>.df {
   padding: 30px 0;
 }
 
-.logo+.df {
+.logo + .df {
   justify-content: space-around;
   width: 100%;
 }
@@ -98,11 +98,11 @@ header>.df {
   align-items: center;
 }
 
-.icon a>img {
+.icon a > img {
   width: 30px;
 }
 
-.icon a>img:last-child {
+.icon a > img:last-child {
   width: 20px;
 }
 
@@ -116,7 +116,7 @@ header>.df {
   overflow: hidden;
 }
 
-.main>img {
+.main > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -130,7 +130,7 @@ header>.df {
   position: absolute;
 }
 
-.main_box>p {
+.main_box > p {
   width: 100%;
   font-size: 50px;
   text-align: center;
@@ -157,8 +157,9 @@ header>.df {
   text-align: center;
 }
 
-.main_icon>p {
+.main_icon > p {
   margin-top: 10%;
+  font-size: 15px;
 }
 
 .main_icon2 {
@@ -169,8 +170,9 @@ header>.df {
   text-align: center;
 }
 
-.main_icon2>p {
+.main_icon2 > p {
   margin-top: 10%;
+  font-size: 15px;
 }
 
 .main_icon3 {
@@ -181,8 +183,9 @@ header>.df {
   text-align: center;
 }
 
-.main_icon3>p {
+.main_icon3 > p {
   margin-top: 10%;
+  font-size: 15px;
 }
 
 .main_icon4 {
@@ -193,8 +196,9 @@ header>.df {
   text-align: center;
 }
 
-.main_icon4>p {
+.main_icon4 > p {
   margin-top: 10%;
+  font-size: 15px;
 }
 
 .main_icon5 {
@@ -205,8 +209,9 @@ header>.df {
   text-align: center;
 }
 
-.main_icon5>p {
+.main_icon5 > p {
   margin-top: 10%;
+  font-size: 15px;
 }
 
 .button2 {
@@ -247,6 +252,8 @@ header>.df {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #cecdcd;
+  border-radius: 30px
 }
 
 .box1_pup {
@@ -255,6 +262,7 @@ header>.df {
   border-radius: 30px;
   line-height: 70px;
   text-align: center;
+  background-color: #5256a2;
 }
 
 .box1_pup2 {
@@ -278,7 +286,7 @@ header>.df {
   height: 550px;
 }
 
-.box1_menu2>img {
+.box1_menu2 > img {
   width: 100%;
   height: 550px;
 }
@@ -306,7 +314,6 @@ header>.df {
 .face {
   width: 45%;
   height: 30%;
-
 }
 
 .face img {
@@ -315,7 +322,7 @@ header>.df {
   margin-left: 25%;
 }
 
-.sns1>img {
+.sns1 > img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
@@ -332,7 +339,6 @@ header>.df {
 .insta {
   width: 45%;
   height: 10%;
-
 }
 
 .insta img {
@@ -341,7 +347,7 @@ header>.df {
   margin-left: 10%;
 }
 
-.sns2>img {
+.sns2 > img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
@@ -358,7 +364,6 @@ header>.df {
 .youtube {
   width: 45%;
   height: 10%;
-
 }
 
 .youtube img {
@@ -367,7 +372,7 @@ header>.df {
   border-radius: 10%;
 }
 
-.sns3>img {
+.sns3 > img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
@@ -384,7 +389,6 @@ header>.df {
 .naver {
   width: 45%;
   height: 10%;
-
 }
 
 .naver img {
@@ -393,7 +397,7 @@ header>.df {
   border-radius: 10%;
 }
 
-.sns4>img {
+.sns4 > img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
@@ -408,7 +412,10 @@ header>.df {
   flex-direction: column;
   align-items: center;
 }
-
+.section2 h2 {
+  margin-bottom: 40px;
+  color: #7a4603;
+}
 .section2_box {
   width: 100%;
   height: 100px;
@@ -420,10 +427,16 @@ header>.df {
 
 .section2_box1 {
   width: 30%;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  background-color: #7a4603;
+  border-color: #7a4603;
+  font-weight: 600;
+  color: #fff;
+  z-index: 2;
 }
 
 .section2_box1 a {
@@ -457,7 +470,7 @@ header>.df {
 .banner_box {
   width: 100%;
   height: 570px;
-
+  border: 1px solid;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -511,7 +524,7 @@ header>.df {
 .banner_box4 .box {
   width: 20%;
   height: 70%;
-  border: 1px solid black;
+  
   margin-bottom: 5%;
 }
 .banner_box4 .box img {
@@ -522,7 +535,7 @@ header>.df {
 .banner_box4 .box2 {
   width: 20%;
   height: 70%;
-  border: 1px solid black;
+  
   margin-top: 5%;
 }
 .banner_box4 .box2 img {
@@ -533,7 +546,7 @@ header>.df {
 .banner_box4 .box3 {
   width: 20%;
   height: 70%;
-  border: 1px solid black;
+ 
   margin-bottom: 5%;
 }
 .banner_box4 .box3 img {
@@ -544,7 +557,7 @@ header>.df {
 .banner_box4 .box4 {
   width: 20%;
   height: 70%;
-  border: 1px solid black;
+  
   margin-top: 5%;
 }
 .banner_box4 .box4 img {
@@ -552,8 +565,6 @@ header>.df {
   height: 100%;
   border-radius: 0 30px 0 0;
 }
-
-
 
 .section3 {
   width: 100%;
@@ -564,14 +575,69 @@ header>.df {
   flex-direction: column;
   align-items: center;
 }
-.sec3_tab{
-  width: 80%;
-    background: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px 0;
+.section3 h2 {
+  color: #5f7a03;
+  margin: 0 auto 35px;
 }
+.section3_menu {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 620px;
+  height: 50px;
+  background-color: #ededed;
+  border-radius: 50px;
+  padding-left: 34px;
+}
+
+.section3_box1 {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5f7a03;
+  border-radius: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+.section3_box1 a {
+  font: 2.5em sans-serif;
+  color: #fff;
+}
+.section3_box2 {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3_box2 a {
+  font: 2.5em sans-serif;
+}
+.section3_box3 {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3_box3 a {
+  font: 2.5em sans-serif;
+}
+.section3 > h2 {
+  color: #5f7a03;
+}
+
+.sec3_tab {
+  width: 80%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
 .sec3_cont {
   width: 100%;
   height: 600px;
@@ -579,15 +645,13 @@ header>.df {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .sec3_box {
   width: 240px;
   height: 320px;
-  background-color: #5f7a03;
 }
-.sec3_box img{
+.sec3_box img {
   width: 240px;
   height: 320px;
   border-radius: 0 30px 0 30px;
@@ -597,7 +661,7 @@ header>.df {
   height: 320px;
   margin-bottom: 10%;
 }
-.sec3_box2 img{
+.sec3_box2 img {
   width: 240px;
   height: 320px;
   border-radius: 0 30px 0 30px;
@@ -606,7 +670,7 @@ header>.df {
   width: 240px;
   height: 320px;
 }
-.sec3_box3 img{
+.sec3_box3 img {
   width: 240px;
   height: 320px;
   border-radius: 0 30px 0 30px;
@@ -616,7 +680,7 @@ header>.df {
   height: 320px;
   margin-bottom: 10%;
 }
-.sec3_box4 img{
+.sec3_box4 img {
   width: 240px;
   height: 320px;
   border-radius: 0 30px 0 30px;
@@ -625,7 +689,7 @@ header>.df {
   width: 240px;
   height: 320px;
 }
-.sec3_box5 img{
+.sec3_box5 img {
   width: 240px;
   height: 320px;
   border-radius: 0 30px 0 30px;

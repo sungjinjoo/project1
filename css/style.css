@@ -117,6 +117,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-top: 20%;
+  
 }
 
 .main_icon {
@@ -129,6 +130,8 @@ img {
 
 .main_icon > p {
   margin-top: 80%;
+  font-size: 15px;
+
 }
 
 .main_icon2 {
@@ -141,6 +144,7 @@ img {
 
 .main_icon2 > p {
   margin-top: 80%;
+
 }
 
 .main_icon3 {
@@ -276,7 +280,7 @@ img {
 }
 .sns1 > img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   border-radius: 10%;
 }
 
@@ -293,7 +297,7 @@ img {
 
 .sns2 > img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   border-radius: 10%;
 }
 
@@ -304,7 +308,7 @@ img {
 }
 .sns3 > img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   border-radius: 10%;
 }
 .sns4 {
@@ -314,7 +318,7 @@ img {
 }
 .sns4 > img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   border-radius: 10%;
 }
 
