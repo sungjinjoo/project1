@@ -86,11 +86,51 @@ header > .df {
   justify-content: space-around;
   width: 100%;
 }
+ul, li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.menu_wrap1 {
+  width: 100%;
+  background: white;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+
+}
+.menu_wrap1 .dep1 > li{
+  
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+  padding: auto;
+  margin-left: 20px;
+ vertical-align: top;
+}
+.dep1{
+  margin: auto;
+}
+.menu_wrap1 .dep1 > li:hover > .dep2{
+  display: block;
+}
+
+.menu_wrap1 .dep2{
+  display: none;
+}
 
 .nav li a {
   font-size: 2.4rem;
 }
-
+.dep1 > ul >li >a {
+  width: 40px;
+  height: 70px;
+  display: block;
+}
 .icon {
   width: 15%;
   display: flex;
@@ -693,4 +733,87 @@ header > .df {
   width: 240px;
   height: 320px;
   border-radius: 0 30px 0 30px;
+}
+footer{
+  width: 100%;
+  background-color: #3b4044;
+}
+.footbox{
+  padding: 20px;
+  max-width: 100%;
+}
+.foot_top{
+  width: 100%;
+  border-bottom: 1px solid #626669;
+  display: flex;
+  align-items: center;
+}
+.foot_top .top_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.sel_w {
+  display: flex;
+  justify-content: center;
+}
+.foot_top .sel{
+  display: flex;
+}
+
+.foot_top select {
+  margin: 20px 0 0;
+}
+  .foot_top select {
+    border: 1px solid #43474b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 40px;
+    padding: 0 30px 0 20px;
+    color: #fff;
+    line-height: 1;
+}
+
+.foot_top .sel {
+  display: flex;
+}
+.foot_btm{
+  width: 100%;
+  display: flex;
+  flex-wrap: Wrap;
+  justify-content: center;
+  align-items: center;
+    padding: 25px 0 30px 0;
+}
+.foot_btm .txt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: Center;
+}
+.foot_btm .txt address p {
+  display: flex;
+  font-size: 16px;
+  color: #c3c3c3;
+  line-height: 1;
+}
+.foot_btm .txt address span {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  font-style: normal;
+}
+.foot-btm .txt address p {
+  display: flex;
+  font-size: 16px;
+  color: #c3c3c3;
+  line-height: 1;
+}
+.foot-btm .btm-btn {
+  display: flex;
+  align-items: Center;
+  margin: 20px 0 0;
 }

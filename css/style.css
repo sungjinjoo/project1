@@ -52,19 +52,53 @@ header {
   display: flex;
 }
 
-.nav {
-  width: 80%;
-  height: 85px;
-  background: white;
+menu_wrap1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dep1 {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
-.nav > li {
-  margin-left: 90px;
+.dep1 > li {
+  position: relative;
+  margin-right: 20px;
 }
 
+.dep1 > li > a {
+  text-decoration: none;
+  color: #000; /* 링크 색상 설정 */
+}
+
+.dep2 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* 하위 메뉴 배경색 설정 */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 그림자 추가 */
+}
+
+.dep1 > li:hover .dep2 {
+  display: block;
+}
+
+.dep2 li {
+  margin: 5px 0;
+}
+
+.dep2 li a {
+  text-decoration: none;
+  color: #333; /* 하위 메뉴 링크 색상 설정 */
+}
+
+.dep2 li a:hover {
+  color: #555; /* 하위 메뉴 링크 호버 시 색상 변경 */
+}
 .icon {
   width: 20%;
   height: 85px;
