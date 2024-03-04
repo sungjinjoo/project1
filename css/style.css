@@ -820,3 +820,6 @@ footer{
   margin: 20px 0 0;
   padding-top: 20px;
 }
+.foot_btm a img{
+  width: 60px;
+}
