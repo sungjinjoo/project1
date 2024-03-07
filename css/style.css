@@ -3,16 +3,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 .df {
   display: flex;
 }
-
 .inner {
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
 }
-
 .popup {
   position: fixed;
   width: min(50%, 500px);
@@ -25,8 +30,7 @@
   top: 20%;
   left: 40%;
 }
-
-.popup > span {
+.popup>span {
   user-select: none;
   cursor: pointer;
   position: absolute;
@@ -38,7 +42,6 @@
   color: #fff;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.4);
 }
-
 .logo {
   padding: 10px 0;
   height: 70px;
@@ -50,29 +53,23 @@
   flex-wrap: nowrap;
   align-items: center;
 }
-
-.logo > a > img {
+.logo>a>img {
   width: 50%;
-
   object-fit: cover;
 }
-
-.logo_box > img {
+.logo_box>img {
   width: 70%;
   height: 60px;
   margin-top: 3%;
 }
-
 header {
   width: 100%;
   padding: 10px 0 0;
 }
-
-header > .df {
+header>.df {
   flex-direction: column;
   align-items: center;
 }
-
 .nav {
   width: 80%;
   background: white;
@@ -81,44 +78,62 @@ header > .df {
   align-items: center;
   padding: 30px 0;
 }
-
-.logo + .df {
+.logo+.df {
   justify-content: space-around;
   width: 100%;
 }
-ul,
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
+/* modify
+.menu_wrap1 { width: 100%; background: white; position: relative; display: flex; justify-content: space-around; align-items: center; padding: 30px 0; }
+ */
+ /* menu_wrap1>.inner 코드에 플렉스 를 주어서 쓸떄없는 코드를 지운거같습니다 */
 .menu_wrap1 {
   width: 100%;
   background: white;
   position: relative;
+}
+.menu_wrap1 a {
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding:4rem 0;
+}
+.menu_wrap1>.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+/* modify:
+ .menu_wrap1 .dep1>li { display: inline-block; width: 100px; height: 20px; text-align: center; font-size: 16px; margin-left: 20px; vertical-align: top; }
+ */
+ /* flex-basis: calc(100% / 8) 이코드는 flex 컨테이너 내에서 li 요소의 너비를 동일하게 분할하려는 경우에 사용됩니다.  */
+.menu_wrap1 .dep1>li {
+  flex-basis: calc(100% / 8);
+}
+/* modify
+.dep1 { margin: auto; }  이코드는 있으나 마나입니다*/
+/* 플렉스를 간격을 일정하게 맞춘거같습니다 */
+.dep1 {
+  padding-left: 40px;
+  flex: 0 0 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* modify
+.icon { width: 15%; display: flex; justify-content: space-around; align-items: center; } */
+.icon {
+  flex: 0 0 15%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px 0;
-}
-.menu_wrap1 .dep1 > li {
-  display: inline-block;
-  width: 100px;
-  height: 20px;
-  text-align: center;
-  font-size: 16px;
-  margin-left: 20px;
-  vertical-align: top;
-}
-.dep1 {
-  margin: auto;
 }
 .menu_wrap1 .dep2_wrap {
   overflow: hidden;
   position: absolute;
-  left: 50%;
+  /* modify
   transform: translateX(-50%);
+    left: 50%; */
+  left: 0%;
   top: 80px;
   width: 100%;
   max-height: 0;
@@ -127,14 +142,15 @@ a {
   border-top: 1px solid #cdcdcd;
   z-index: 40;
 }
+/*
+삭제
 .menu_wrap1 .dep2_wrap {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
   padding: 60px 0 60px 60px;
   background: #fff;
-}
-
+} */
 .menu_wrap1 .dep2_wrap .dep2_inner {
   display: flex;
   display: block;
@@ -143,38 +159,24 @@ a {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-.menu_wrap1 .dep1 > li:hover > .dep2 {
+.menu_wrap1 .dep1>li:hover>.dep2 {
   display: block;
 }
-
+/* modify
+.menu_wrap1 .dep2 { display: none; } */
 .menu_wrap1 .dep2 {
+  position: absolute;
   display: none;
 }
-
 .nav li a {
   font-size: 2.4rem;
 }
-.dep1 > ul > li > a {
-  width: 40px;
-  height: 70px;
-  display: block;
-}
-.icon {
-  width: 15%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.icon a > img {
+.icon a>img {
   width: 30px;
 }
-
-.icon a > img:last-child {
+.icon a>img:last-child {
   width: 20px;
 }
-
 .main {
   width: 100%;
   height: 800px;
@@ -184,13 +186,11 @@ a {
   align-items: center;
   overflow: hidden;
 }
-
-.main > img {
+.main>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .main_box {
   width: 100%;
   height: 300px;
@@ -198,210 +198,178 @@ a {
   line-height: 2;
   position: absolute;
 }
-
-.main_box > p {
+.main_box>p {
   width: 100%;
   font-size: 50px;
   text-align: center;
   color: #fff;
   position: absolute;
 }
-
 .main_box1 {
   width: 780px;
   height: 210px;
-
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20%;
 }
-
 .main_icon {
   width: 120px;
   height: 130px;
-
   border-radius: 50%;
   text-align: center;
 }
-
-.main_icon > p {
+.main_icon>p {
   margin-top: 10%;
   font-size: 15px;
 }
-
 .main_icon2 {
   width: 120px;
   height: 130px;
-
   border-radius: 50%;
   text-align: center;
 }
-
-.main_icon2 > p {
+.main_icon2>p {
   margin-top: 10%;
   font-size: 15px;
 }
-
 .main_icon3 {
   width: 120px;
   height: 130px;
-
   border-radius: 50%;
   text-align: center;
 }
-
-.main_icon3 > p {
+.main_icon3>p {
   margin-top: 10%;
   font-size: 15px;
 }
-
 .main_icon4 {
   width: 120px;
   height: 130px;
-
   border-radius: 50%;
   text-align: center;
 }
-
-.main_icon4 > p {
+.main_icon4>p {
   margin-top: 10%;
   font-size: 15px;
 }
-
 .main_icon5 {
   width: 120px;
   height: 130px;
-
   border-radius: 50%;
   text-align: center;
 }
-
-.main_icon5 > p {
+.main_icon5>p {
   margin-top: 10%;
   font-size: 15px;
 }
-
 .button2 {
   margin-left: 75%;
 }
-
 .section1 {
   width: 100%;
   height: 820px;
-
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-
 .sc1 {
   width: 100%;
   height: 40px;
-
+  color: #58aae3;
   text-align: center;
 }
-
+.sc1 h2{
+  font-weight:700;
+}
 .box1 {
   width: 50%;
   height: 700px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-
 .box1_menu {
   width: 80%;
-  height: 90px;
-
+  height: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #e4e4e4;
   border-radius: 30px;
-  color: #888;
+  
 }
-
 .box1_pup {
-  width: 30%;
+  width: 38%;
   height: 70px;
-  border-radius: 30px;
+  border-radius: 20px;
   line-height: 70px;
   text-align: center;
   background-color: #5256a2;
+  color: #fff;
 }
-
 .box1_pup2 {
-  width: 30%;
+  width: 38%;
   height: 70px;
-  border-radius: 30px;
+  border-radius: 20px;
   line-height: 70px;
   text-align: center;
+  color: #888;
 }
-
 .box1_pup3 {
-  width: 30%;
+  width: 38%;
   height: 70px;
-  border-radius: 30px;
+  border-radius: 20px;
   line-height: 70px;
   text-align: center;
+  color: #888;
 }
-
 .box1_menu2 {
   width: 80%;
   height: 550px;
+  border: 2px solid #888 ;
 }
-
-.box1_menu2 > img {
+.box1_menu2>img {
   width: 100%;
   height: 550px;
   object-fit: cover;
 }
-
 .box2 {
   width: 50%;
   height: 700px;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-around;
 }
-
 .sns1 {
   width: 45%;
   height: 300px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .face {
   width: 45%;
   height: 30%;
   object-fit: cover;
 }
-
 .face img {
   width: 50%;
   height: 100%;
   margin-left: 25%;
   object-fit: cover;
 }
-
-.sns1 > img {
+.sns1>img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
 }
-
 .sns2 {
   width: 45%;
   height: 300px;
@@ -409,26 +377,22 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .insta {
   width: 45%;
   height: 10%;
 }
-
 .insta img {
   width: 70%;
   height: 100%;
   margin-left: 10%;
   object-fit: cover;
 }
-
-.sns2 > img {
+.sns2>img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
 }
-
 .sns3 {
   width: 45%;
   height: 300px;
@@ -436,26 +400,22 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .youtube {
   width: 45%;
   height: 10%;
 }
-
 .youtube img {
   width: 100%;
   height: 100%;
   border-radius: 10%;
   object-fit: cover;
 }
-
-.sns3 > img {
+.sns3>img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
 }
-
 .sns4 {
   width: 45%;
   height: 300px;
@@ -463,48 +423,44 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .naver {
   width: 45%;
   height: 10%;
 }
-
 .naver img {
   width: 100%;
   height: 100%;
   border-radius: 10%;
   object-fit: cover;
 }
-
-.sns4 > img {
+.sns4>img {
   width: 100%;
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
 }
-
 .section2 {
   width: 100%;
   height: 815px;
-
-  margin: auto;
+  background: #eef0e5;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .section2 h2 {
-  margin-bottom: 40px;
+  margin-top: 35px;
+  font-weight:700;
   color: #7a4603;
 }
 .section2_box {
   width: 100%;
   height: 100px;
-
+  margin-top: 35px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .section2_box1 {
   width: 30%;
   height: 60px;
@@ -518,11 +474,9 @@ a {
   color: #fff;
   z-index: 2;
 }
-
 .section2_box1 a {
   font: 2.5em sans-serif;
 }
-
 .section2_box2 {
   width: 30%;
   height: 80px;
@@ -530,11 +484,9 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .section2_box2 a {
   font: 2.5em sans-serif;
 }
-
 .section2_box3 {
   width: 30%;
   height: 80px;
@@ -542,11 +494,9 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .section2_box3 a {
   font: 2.5em sans-serif;
 }
-
 .banner_box {
   width: 100%;
   height: 570px;
@@ -554,48 +504,39 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-
 .banner_box1 {
   width: 30%;
   height: 500px;
 }
-
 .banner_box1 img {
   width: 90%;
   height: 100%;
 }
-
 .banner_box2 {
   width: 55%;
   height: 500px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .banner_box3 {
   width: 100%;
   height: 200px;
 }
-
 .banner_box3 .subject {
   font-size: 30px;
   font-weight: 600;
   color: #333;
 }
-
 .banner_box3 .txt {
   font-size: 18px;
   font-weight: 400;
   color: #333;
   margin-top: 10px;
 }
-
 .banner_box4 {
   width: 100%;
   height: 3000px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -603,7 +544,6 @@ a {
 .banner_box4 .box {
   width: 20%;
   height: 70%;
-
   margin-bottom: 5%;
 }
 .banner_box4 .box img {
@@ -614,7 +554,6 @@ a {
 .banner_box4 .box2 {
   width: 20%;
   height: 70%;
-
   margin-top: 5%;
 }
 .banner_box4 .box2 img {
@@ -625,7 +564,6 @@ a {
 .banner_box4 .box3 {
   width: 20%;
   height: 70%;
-
   margin-bottom: 5%;
 }
 .banner_box4 .box3 img {
@@ -636,7 +574,6 @@ a {
 .banner_box4 .box4 {
   width: 20%;
   height: 70%;
-
   margin-top: 5%;
 }
 .banner_box4 .box4 img {
@@ -644,31 +581,28 @@ a {
   height: 100%;
   border-radius: 0 30px 0 0;
 }
-
 .section3 {
   width: 100%;
   height: 815px;
-
-  margin: auto;
+  background: #eef0e5;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .section3 h2 {
   color: #5f7a03;
-  margin: 0 auto 35px;
+  font-weight:700;
 }
 .section3_menu {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin-top: 35px;
   width: 620px;
   height: 50px;
   background-color: #ededed;
   border-radius: 50px;
   padding-left: 34px;
 }
-
 .section3_box1 {
   width: 30%;
   height: 50px;
@@ -704,10 +638,9 @@ a {
 .section3_box3 a {
   font: 2.5em sans-serif;
 }
-.section3 > h2 {
+.section3>h2 {
   color: #5f7a03;
 }
-
 .sec3_tab {
   width: 80%;
   background: white;
@@ -716,16 +649,13 @@ a {
   align-items: center;
   padding: 30px 0;
 }
-
 .sec3_cont {
   width: 100%;
   height: 600px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .sec3_box {
   width: 240px;
   height: 320px;
@@ -802,7 +732,6 @@ footer {
 .foot_top .sel {
   display: flex;
 }
-
 .foot_top select {
   margin: 20px 0 0;
 }
@@ -817,7 +746,6 @@ footer {
   color: #fff;
   line-height: 1;
 }
-
 .foot_top .sel {
   display: flex;
 }
