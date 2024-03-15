@@ -64,25 +64,24 @@ init();
 ========== */
 function menu() {
 	const dep1 = $('.dep1>li');
-	const dep2H = $('.dep2>li').outerHeight();
+	const dep2 = $('.dep2');
 	const bg = $('.bg');
 	dep1.on({
 		mouseenter: function () {
 			let tg = $(this);
-			console.log(tg);
-			let dep2Len = tg.find('.dep2>li').length;
-			console.log(dep2Len);
+			let dep2a = tg.find('.dep2');
 			let newH = tg.find('ul').outerHeight();
-			console.log(dep2Len);
 			bg.css('height', newH);
+			dep2.hide();
+			dep2a.slideDown();
 		},
 		mouseleave: function () {
 			bg.css('height', 0);
+			dep2.hide();
 		},
 	});
 }
 menu();
-
 $('.tab-btn a').click(function(){
 	$(this).addClass('active')
 	$(this).siblings('.tab-btn a').removeClass('active')
