@@ -36,7 +36,7 @@ a {
   left: 40%;
 }
 
-.popup>span {
+.popup > span {
   user-select: none;
   cursor: pointer;
   position: absolute;
@@ -61,12 +61,12 @@ a {
   align-items: center;
 }
 
-.logo>a>img {
+.logo > a > img {
   width: 50%;
   object-fit: cover;
 }
 
-.logo_box>img {
+.logo_box > img {
   width: 70%;
   height: 60px;
   margin-top: 3%;
@@ -77,7 +77,7 @@ header {
   padding: 10px 0 0;
 }
 
-header>.df {
+header > .df {
   flex-direction: column;
   align-items: center;
 }
@@ -91,7 +91,7 @@ header>.df {
   padding: 30px 0;
 }
 
-.logo+.df {
+.logo + .df {
   justify-content: space-around;
   width: 100%;
 }
@@ -115,7 +115,7 @@ header>.df {
   padding: 4rem 0;
 }
 
-.menu_wrap1>.inner {
+.menu_wrap1 > .inner {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -124,7 +124,7 @@ header>.df {
 /* modify:
  .menu_wrap1 .dep1>li { display: inline-block; width: 100px; height: 20px; text-align: center; font-size: 16px; margin-left: 20px; vertical-align: top; }
  */
-.menu_wrap1 .dep1>li {
+.menu_wrap1 .dep1 > li {
   flex-basis: calc(100% / 8);
   position: relative;
 }
@@ -189,18 +189,17 @@ header>.df {
   height: 0;
 }
 
-.icon a>img {
+.icon a > img {
   width: 30px;
 }
 
-.icon a>img:last-child {
+.icon a > img:last-child {
   width: 20px;
 }
 
 .main {
   width: 100%;
   height: 800px;
-  position: absolute;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -208,6 +207,56 @@ header>.df {
   overflow: hidden;
 }
 
+/* .main > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.main_box {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  line-height: 2;
+  position: absolute;
+  z-index: 10;
+}
+
+.main_box > p {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+}
+
+.main_box1 {
+  width: 780px;
+  height: 210px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20%;
+  z-index: 9;
+}
+
+.main_icon {
+  width: 130px;
+  height: 130px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.main_icon > p {
+  margin-top: 10%;
+  font-size: 15px;
+}
+
+.button2 {
+  margin-left: 75%;
+}
 /* 슬라이드 */
 .swiper-slide {
   width: 100%;
@@ -246,12 +295,10 @@ header>.df {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   /* position: absolute; */
-
 }
 
 .swiper-button-prev::after,
-.swiper-rtl .swiper-button-next::after
-.swiper-button-next::after,
+.swiper-rtl .swiper-button-next::after .swiper-button-next::after,
 .swiper-rtl .swiper-button-next::after {
   display: none;
 }
@@ -261,56 +308,6 @@ header>.df {
   background-color: #004fff;
   box-shadow: 0 4px 12px rgba(0, 79, 255, 0.4);
 }
-
-/* .main > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-.main_box {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  line-height: 2;
-  position: absolute;
-}
-
-.main_box>p {
-  width: 100%;
-  font-size: 50px;
-  text-align: center;
-  color: #fff;
-  position: absolute;
-}
-
-.main_box1 {
-  width: 780px;
-  height: 210px;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20%;
-}
-
-.main_icon {
-  width: 130px;
-  height: 130px;
-  background: white;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 15px;
-}
-
-.main_icon>p {
-  margin-top: 10%;
-  font-size: 15px;
-}
-
-.button2 {
-  margin-left: 75%;
-}
-
 .section1 {
   width: 100%;
   height: 820px;
@@ -377,7 +374,6 @@ header>.df {
 
 .tab:target {
   opacity: 1;
-  ;
 }
 
 .box2 {
@@ -411,7 +407,7 @@ header>.df {
   object-fit: cover;
 }
 
-.sns1>img {
+.sns1 > img {
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
@@ -438,7 +434,7 @@ header>.df {
   object-fit: cover;
 }
 
-.sns2>img {
+.sns2 > img {
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
@@ -464,7 +460,7 @@ header>.df {
   object-fit: cover;
 }
 
-.sns3>img {
+.sns3 > img {
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
@@ -490,7 +486,7 @@ header>.df {
   object-fit: cover;
 }
 
-.sns4>img {
+.sns4 > img {
   height: 300px;
   border-radius: 10%;
   object-fit: cover;
@@ -729,7 +725,7 @@ header>.df {
   font-size: 2.5em;
 }
 
-.section3>h2 {
+.section3 > h2 {
   color: #5f7a03;
 }
 
