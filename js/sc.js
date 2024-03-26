@@ -86,3 +86,20 @@ $('.tab-btn a').click(function(){
 	$(this).addClass('active')
 	$(this).siblings('.tab-btn a').removeClass('active')
 })
+// 슬라이드
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+  
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination',
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  
+  });
