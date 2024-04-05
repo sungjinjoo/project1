@@ -187,6 +187,7 @@ header > .df {
   left: 0;
   background: #ffffffe1;
   height: 0;
+  z-index: 9;
 }
 
 .icon a > img {
@@ -351,7 +352,7 @@ header > .df {
 .tab-btn a.active {
   background-color: #58aae3;
   color: #626669;
-  border-top: 3px solid #3b4044;
+ /*  border-top: 3px solid #3b4044; */
 }
 
 .tab-content {
