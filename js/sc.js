@@ -106,3 +106,22 @@ const swiper = new Swiper('.swiper', {
 	},
   
   });
+  const tabWrap = document.querySelector('.section2'),
+	targetLink = document.querySelectorAll('.section2_box a'),
+	tabContent = document.querySelectorAll('.banner_box3>div');
+/* 반복문 */
+targetLink[0].classList.add('active');
+tabContent[0].classList.add('active');
+for (let i = 0; i < targetLink.length; i++) {
+	targetLink[i].addEventListener('click', function (e) {
+		e.preventDefault();
+		let tg = this;
+		let link = tg.getAttribute('href');
+		for (let j = 0; j < targetLink.length; j++) {
+			targetLink[j].classList.remove('active');
+			tabContent[j].classList.remove('active');
+		}
+		tg.classList.add('active');
+		document.querySelector(link).classList.add('active');
+	});
+}
