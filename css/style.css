@@ -295,7 +295,7 @@ header > .df {
   background-repeat: no-repeat;
   z-index: 2;
   border-radius: 50%;
-  -webkit-transition: 0.4s;
+  /* -webkit-transition: 0.4s; */
   transition: 0.4s;
   /* position: absolute; */
 }
