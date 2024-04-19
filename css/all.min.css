@@ -3,6 +3,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
+
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900);
@@ -627,7 +628,10 @@
   -webkit-transform: scale(-1);
   transform: scale(-1);
 }
-
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+  transform: rotate(var(--fa-rotate-angle, none));
+}
 .fa-stack {
   display: inline-block;
   height: 2em;
