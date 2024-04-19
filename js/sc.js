@@ -111,7 +111,6 @@ const swiper = new Swiper('.swiper', {
 	tabContent = document.querySelectorAll('.banner_box3>div');
 /* 반복문 */
 targetLink[0].classList.add('active');
-tabContent[0].classList.add('active');
 for (let i = 0; i < targetLink.length; i++) {
 	targetLink[i].addEventListener('click', function (e) {
 		e.preventDefault();
